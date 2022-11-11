@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsEFEscuela", "Windows
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsAppNorthwind", "WindowsAppNorthwind\WindowsAppNorthwind.csproj", "{236EED15-CAC7-457E-85FC-8B4E4D974D0E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsAppPubs", "WindowsAppPubs\WindowsAppPubs.csproj", "{D5C8E8B1-4E2C-4FCE-9A88-E357ED6C5348}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsAppPubs", "WindowsPubs\WindowsAppPubs.csproj", "{9BA607C1-2501-44FE-B129-16E86D4A6336}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{236EED15-CAC7-457E-85FC-8B4E4D974D0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{236EED15-CAC7-457E-85FC-8B4E4D974D0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{236EED15-CAC7-457E-85FC-8B4E4D974D0E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D5C8E8B1-4E2C-4FCE-9A88-E357ED6C5348}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D5C8E8B1-4E2C-4FCE-9A88-E357ED6C5348}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D5C8E8B1-4E2C-4FCE-9A88-E357ED6C5348}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D5C8E8B1-4E2C-4FCE-9A88-E357ED6C5348}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BA607C1-2501-44FE-B129-16E86D4A6336}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BA607C1-2501-44FE-B129-16E86D4A6336}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BA607C1-2501-44FE-B129-16E86D4A6336}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BA607C1-2501-44FE-B129-16E86D4A6336}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

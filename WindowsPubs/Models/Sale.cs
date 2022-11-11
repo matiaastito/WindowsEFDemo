@@ -1,4 +1,4 @@
-namespace WindowsAppPubs.Models
+namespace WindowsPubs.Models
 {
     using System;
     using System.Collections.Generic;
@@ -31,7 +31,7 @@ namespace WindowsAppPubs.Models
         [StringLength(6)]
         public string title_id { get; set; }
 
-        public virtual Author stores { get; set; }
+        public virtual Store stores { get; set; }
 
         public virtual Title titles { get; set; }
     }

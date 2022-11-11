@@ -14,13 +14,6 @@
       <FileName>Models\Title.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="WindowsAppPubs.Models.Store">
-    <Position X="1" Y="7" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAMAAAACAAAAABAAAAEABAAAAYAAAA=</HashCode>
-      <FileName>Models\Store.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="WindowsAppPubs.Models.Sale">
     <Position X="8.5" Y="4.75" Width="1.5" />
     <TypeIdentifier>
@@ -73,7 +66,7 @@
   <Class Name="WindowsAppPubs.Models.Author">
     <Position X="2.75" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAABgAAAAAIAAAACAAAAAIAAEAkAAAAAAAQCAA=</HashCode>
+      <HashCode>AAAAAAAABgAAAAAMAAAACAAAAAJAAEAkABAAAAYQCAA=</HashCode>
       <FileName>Models\Author.cs</FileName>
     </TypeIdentifier>
   </Class>

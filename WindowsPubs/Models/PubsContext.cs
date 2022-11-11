@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity;
 using System.Linq;
 
-namespace WindowsAppPubs.Models
+namespace WindowsPubs.Models
 {
     public partial class PubsContext : DbContext
     {
@@ -12,17 +12,17 @@ namespace WindowsAppPubs.Models
         {
         }
 
-        public virtual DbSet<Author> Authors { get; set; }
-        public virtual DbSet<Employee> Employee { get; set; }
-        public virtual DbSet<Job> Jobs { get; set; }
-        public virtual DbSet<PubInfo> PubInfos { get; set; }
-        public virtual DbSet<Publisher> Publishers { get; set; }
-        public virtual DbSet<Sale> Sales { get; set; }
-        public virtual DbSet<Author> Stores { get; set; }
-        public virtual DbSet<Titleauthor> Sitleauthor { get; set; }
-        public virtual DbSet<Title> Titles { get; set; }
-        public virtual DbSet<Discount> Discounts { get; set; }
-        public virtual DbSet<Roysched> Roysched { get; set; }
+        public virtual DbSet<Author> authors { get; set; }
+        public virtual DbSet<Employee> employee { get; set; }
+        public virtual DbSet<Job> jobs { get; set; }
+        public virtual DbSet<PubInfo> pubInfo { get; set; }
+        public virtual DbSet<Publisher> publishers { get; set; }
+        public virtual DbSet<Sale> sales { get; set; }
+        public virtual DbSet<Store> stores { get; set; }
+        public virtual DbSet<TitleAuthor> titleauthor { get; set; }
+        public virtual DbSet<Title> titles { get; set; }
+        public virtual DbSet<Discount> discounts { get; set; }
+        public virtual DbSet<Roysched> roysched { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -131,11 +131,11 @@ namespace WindowsAppPubs.Models
 
             modelBuilder.Entity<Publisher>()
                 .HasMany(e => e.employee)
-                .WithRequired(e => e.Publishers)
+                .WithRequired(e => e.publishers)
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<Publisher>()
-                .HasOptional(e => e.pub_info)
+                .HasOptional(e => e.pubInfo)
                 .WithRequired(e => e.publishers);
 
             modelBuilder.Entity<Sale>()
@@ -155,43 +155,43 @@ namespace WindowsAppPubs.Models
                 .Property(e => e.title_id)
                 .IsUnicode(false);
 
-            modelBuilder.Entity<Author>()
+            modelBuilder.Entity<Store>()
                 .Property(e => e.stor_id)
                 .IsFixedLength()
                 .IsUnicode(false);
 
-            modelBuilder.Entity<Author>()
+            modelBuilder.Entity<Store>()
                 .Property(e => e.stor_name)
                 .IsUnicode(false);
 
-            modelBuilder.Entity<Author>()
+            modelBuilder.Entity<Store>()
                 .Property(e => e.stor_address)
                 .IsUnicode(false);
 
-            modelBuilder.Entity<Author>()
+            modelBuilder.Entity<Store>()
                 .Property(e => e.city)
                 .IsUnicode(false);
 
-            modelBuilder.Entity<Author>()
+            modelBuilder.Entity<Store>()
                 .Property(e => e.state)
                 .IsFixedLength()
                 .IsUnicode(false);
 
-            modelBuilder.Entity<Author>()
+            modelBuilder.Entity<Store>()
                 .Property(e => e.zip)
                 .IsFixedLength()
                 .IsUnicode(false);
 
-            modelBuilder.Entity<Author>()
+            modelBuilder.Entity<Store>()
                 .HasMany(e => e.sales)
                 .WithRequired(e => e.stores)
                 .WillCascadeOnDelete(false);
 
-            modelBuilder.Entity<Titleauthor>()
+            modelBuilder.Entity<TitleAuthor>()
                 .Property(e => e.au_id)
                 .IsUnicode(false);
 
-            modelBuilder.Entity<Titleauthor>()
+            modelBuilder.Entity<TitleAuthor>()
                 .Property(e => e.title_id)
                 .IsUnicode(false);
 

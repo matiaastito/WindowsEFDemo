@@ -1,4 +1,4 @@
-namespace WindowsAppPubs.Models
+namespace WindowsPubs.Models
 {
     using System;
     using System.Collections.Generic;
@@ -24,6 +24,6 @@ namespace WindowsAppPubs.Models
         [Column(Order = 1)]
         public decimal discount { get; set; }
 
-        public virtual Author stores { get; set; }
+        public virtual Store stores { get; set; }
     }
 }

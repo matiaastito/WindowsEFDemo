@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsAppPubs;
 
-namespace WindowsAppPubs
+namespace WindowsPubs
 {
     internal static class Program
     {
@@ -16,7 +17,7 @@ namespace WindowsAppPubs
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmAuthor());
+            Application.Run(new frmStore());
         }
     }
 }

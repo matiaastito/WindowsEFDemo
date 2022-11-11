@@ -1,4 +1,4 @@
-namespace WindowsAppPubs.Models
+namespace WindowsPubs.Models
 {
     using System;
     using System.Collections.Generic;
@@ -6,24 +6,21 @@ namespace WindowsAppPubs.Models
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    public partial class Store
+    public partial class Publisher
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Store()
+        public Publisher()
         {
-            sales = new HashSet<Sale>();
-            discounts = new HashSet<Discount>();
+            employee = new HashSet<Employee>();
+            titles = new HashSet<Title>();
         }
 
         [Key]
         [StringLength(4)]
-        public string stor_id { get; set; }
+        public string pub_id { get; set; }
 
         [StringLength(40)]
-        public string stor_name { get; set; }
-
-        [StringLength(40)]
-        public string stor_address { get; set; }
+        public string pub_name { get; set; }
 
         [StringLength(20)]
         public string city { get; set; }
@@ -31,13 +28,15 @@ namespace WindowsAppPubs.Models
         [StringLength(2)]
         public string state { get; set; }
 
-        [StringLength(5)]
-        public string zip { get; set; }
+        [StringLength(30)]
+        public string country { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Sale> sales { get; set; }
+        public virtual ICollection<Employee> employee { get; set; }
+
+        public virtual PubInfo pubInfo { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Discount> discounts { get; set; }
+        public virtual ICollection<Title> titles { get; set; }
     }
 }

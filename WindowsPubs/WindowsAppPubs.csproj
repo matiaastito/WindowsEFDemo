@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D5C8E8B1-4E2C-4FCE-9A88-E357ED6C5348}</ProjectGuid>
+    <ProjectGuid>{9BA607C1-2501-44FE-B129-16E86D4A6336}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>WindowsAppPubs</RootNamespace>
-    <AssemblyName>WindowsAppPubs</AssemblyName>
+    <RootNamespace>WindowsPubs</RootNamespace>
+    <AssemblyName>WindowsPubs</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -84,8 +84,8 @@
     <Compile Include="Models\PubInfo.cs" />
     <Compile Include="Models\Roysched.cs" />
     <Compile Include="Models\Sale.cs" />
-    <Compile Include="Models\Author_1.cs" />
-    <Compile Include="Models\Titleauthor.cs" />
+    <Compile Include="Models\Store.cs" />
+    <Compile Include="Models\TitleAuthor.cs" />
     <Compile Include="Models\Title.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -107,7 +107,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="Models\DiagramaClases.cd" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
